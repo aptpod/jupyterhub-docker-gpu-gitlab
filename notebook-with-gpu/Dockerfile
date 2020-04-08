@@ -143,12 +143,12 @@ RUN conda install --quiet --yes \
     'dill' \
     'numba' \
     'bokeh' \
-    'sqlalchemy=1.*' \
-    'hdf5=1.8.17' \
-    'h5py=2.6*' \
-    'vincent=0.4.*' \
-    'beautifulsoup4=4.*' \
-    'protobuf=3.*' \
+    'sqlalchemy' \
+    'hdf5' \
+    'h5py' \
+    'vincent' \
+    'beautifulsoup4' \
+    'protobuf' \
     'xlrd'  && \
     conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy && \
