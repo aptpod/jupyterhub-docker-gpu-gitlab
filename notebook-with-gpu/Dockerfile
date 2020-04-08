@@ -181,7 +181,7 @@ RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
 RUN pip install cupy chainer
 
 # Install Tensorflow
-RUN pip install tensorflow-gpu==1.9.* keras==2.2.*
+RUN pip install tensorflow-gpu==1.15.2 keras==2.2.*
 
 # Install Pytorch
 RUN conda install --quiet --yes pytorch torchvision -c pytorch
