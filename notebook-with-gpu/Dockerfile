@@ -59,8 +59,8 @@ RUN mkdir /home/$NB_USER/work && \
     fix-permissions /home/$NB_USER
 
 # Install conda as jovyan and check the md5 sum provided on the download site
-ENV MINICONDA_VERSION 4.3.31
-ENV MINICONDA_CHECKSUM 7fe70b214bee1143e3e3f0467b71453c
+ENV MINICONDA_VERSION 4.7.12.1
+ENV MINICONDA_CHECKSUM 81c773ff87af5cfac79ab862942ab6b3
 RUN cd /tmp && \
     wget --quiet https://repo.continuum.io/miniconda/Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh && \
     echo "${MINICONDA_CHECKSUM} *Miniconda3-${MINICONDA_VERSION}-Linux-x86_64.sh" | md5sum -c - && \
